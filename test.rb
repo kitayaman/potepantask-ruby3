@@ -3,7 +3,6 @@ class Slot
     def initialize
         @coin = 100
         @point = 0
-        
     end
     
     def display
@@ -28,7 +27,6 @@ class Slot
             when @bet_coin == 3
                 puts "bet coin is 50"
                 @bet_coin = 50
-                
             else
                 puts "やめ時も肝心"
                 exit
@@ -36,7 +34,6 @@ class Slot
     end
     
     def spin
-        
         puts "enterキーを押してスロットを止めよう"
         if @coin < @bet_coin
             puts "--------------------"
@@ -47,7 +44,6 @@ class Slot
         
         require 'io/console'
         @coin = @coin - @bet_coin
-        
         @left1,@center1,@right1 = nil
         @left2,@center2,@right2 = nil
         @left3,@center3,@right3 = nil
@@ -83,7 +79,6 @@ class Slot
             else
                 puts "もうスピンしません"
             end
-            
         end
     end
             
@@ -128,3 +123,4 @@ slot_machine.coin_check
 slot_machine.spin
 slot_machine.spin_check
 end
+
